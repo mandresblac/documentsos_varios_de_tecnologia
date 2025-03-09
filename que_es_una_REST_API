@@ -1,0 +1,32 @@
+REST es el acronimo de REPRESENTATIONAL STATE TRANSFER y es una arquitectura de software, no es un framework, no es
+una biblioteca, no es un patron, no es una idea, es una ARQUITECTURA DE SOFTWARE que se a utilizado mucho para
+construir APIs.
+Nacio en el año 2000 por Roy Fielding.
+
+Principios en los que se bas REST:
+- Escalabilidad.
+- Simplicidad.
+- Visibilidad.
+- Portabilidad.
+- Fiabilidad.
+- Facil de modificar.
+
+Fundamentos de REST:
+- Resources (Recursos):
+  Todo es considerado un recurso, un susuario, un libro,una imagen, una publicación de un bloc,
+  etc, todos estos son recursos. Cade recurso se identifica con una URL
+- Verbos o metodos HTTP:
+  Metodos Get, Post, Put, Delete, Patch, etc, que son los que se utilizan para definir las
+  operaciones que se pueden realizar con los recursos.
+- Representaciones:
+  Los recursos se pueden presentar en diferentes formatos, por ejemplo formato JSON, XML, HTML, etc.
+  El cliente deberia poder desidir la representación del recurso.
+- Stateless:
+  Stateless significa que cada solicitud que se hace al servidor debe contener toda la información necesaria para
+  entender esa solicitud, es decir, el servidor no debe mantener ningún estado sobre el cliente entre solicitudes.
+  El cliente debe enviar toda la información necesaria para procesar la request (Petición)
+- Interfaz uniforme
+- Separación de conceptos:
+  Los componentes del del cliente y del servidor estan separados entre si, esto permite que cliente y servidor
+  evolucionen de forma separada.
+

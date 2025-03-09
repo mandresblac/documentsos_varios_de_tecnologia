@@ -1,0 +1,32 @@
+¿Qué son IP y TCP?
+El protocolo de Internet (IP) es el sistema de direcciones de Internet y tiene la función principal de entregar paquetes de información desde
+un dispositivo de origen a un dispositivo de destino. Es la forma principal en la que se realizan las conexiones de red y establece la base
+de Internet, pero no gestiona el orden de los paquetes ni la verificación de errores. Esta funcionalidad requiere otro protocolo, normalmente
+TCP.
+
+La relación entre los protocolos TCP e IP es similar a enviar a alguien un mensaje escrito en un rompecabezas por correo postal. Se escribe el
+mensaje y se desmontan las piezas del rompecabezas. Luego, cada pieza puede viajar a través de una ruta postal diferente, algunas de las
+cuales requieren más tiempo que otras. Cuando las piezas del rompecabezas llegan después de recorrer diferentes rutas, es posible que estén
+desordenadas. El protocolo de Internet garantiza que las piezas lleguen a su dirección de destino. Por su parte, el protocolo TCP sería como
+la persona que ordena las piezas del rompecabezas en el otro lado. Reúne las piezas en el orden correcto, solicita el reenvío de las piezas
+que faltan e informa al remitente de que se ha recibido el rompecabezas. Además, mantiene la conexión con el remitente antes del envío de la
+primera pieza del rompecabezas hasta después del envío de la última pieza.
+
+IP es un protocolo sin conexión, lo que significa que cada unidad de datos se aborda individualmente y se enruta desde el dispositivo de
+origen al dispositivo de destino, que no envía una confirmación de vuelta al origen. Ahí es donde entran en juego protocolos como el TCP.
+Este último se utiliza junto con el protocolo de Internet para mantener una conexión entre el remitente y el destino y para garantizar el
+orden del paquete.
+
+Por ejemplo, cuando se envía un correo electrónico a través del protocolo TCP, se establece una conexión y se realiza un protocolo de enlace
+de 3 vías. En primer lugar, el origen envía un paquete de "solicitud inicial" SYN al servidor de destino para iniciar la comunicación. Luego,
+el servidor de destino envía un paquete SYN-ACK para aceptar el proceso. Por último, el origen envía un paquete ACK al destino para confirmar
+el proceso, tras lo que se puede enviar el contenido del mensaje. El mensaje de correo electrónico se divide en última instancia en paquetes
+antes de que cada paquete se envíe a Internet, donde recorre una serie de puertas de enlace antes de llegar al dispositivo de destino donde el
+TCP reagrupa el conjunto de paquetes en el contenido original del correo electrónico.
+
+La versión principal de IP que se utiliza en Internet hoy en día es la versión 4 (IPv4). Las limitaciones de tamaño en el número total de
+direcciones posibles en IPv4 propiciaron el desarrollo de un protocolo más nuevo, que se llama IPv6 y permite que haya muchas más direcciones
+disponibles. Su adopción es cada vez más frecuente.
+
+sitio web de información:  https://www.cloudflare.com/es-es/learning/ddos/glossary/tcp-ip/
+

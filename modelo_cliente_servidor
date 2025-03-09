@@ -1,0 +1,32 @@
+El modelo cliente-servidor es un diseño arquitectónico que se utiliza para organizar y gestionar una red. Es el tipo de arquitectura
+más común para la World Wide Web. El modelo cliente-servidor es uno de los modelos más populares para el diseño de la web porque
+permite un sistema que es escalable, seguro y eficiente.
+
+El modelo cliente-servidor existe desde los años 70, cuando fue creado por IBM. Originalmente, se conocía como la arquitectura de
+“tres niveles” porque consta de tres capas:
+
+Una capa de presentación
+Una capa lógica
+Una capa de datos.
+¿Cuál es la diferencia entre la arquitectura cliente-servidor y la arquitectura entre iguales? (peer-to-peer)
+La arquitectura cliente-servidor es el tipo más popular de arquitectura de alojamiento web en uso. En este modelo, se emplea un
+servidor para alojar un sitio web y los clientes se conectan al sitio a través de un navegador.
+
+La arquitectura peer-to-peer es menos común, pero ofrece algunas ventajas sobre los modelos cliente-servidor. El alojamiento
+peer-to-peer permite una red descentralizada que puede ser más resistente a los ataques de denegación de servicio y otros tipos de
+piratería.
+
+Tecnologías usadas para la conexión cliente-servidor
+Las tecnologías utilizadas en aplicaciones web son:
+
+Bases de datos: MySQL es una base de datos relacionales y MongoDB es una base de datos no relacional
+
+Backend: es la parte lógica del sitio, la forma en que las piezas del sitio web se comunican entre sí. Existen muchos lenguajes que
+puedes usar cómo Python, Ruby, JavaScript
+
+Servidores: existen tecnologías como NGINX, Apache, Node
+
+Frontend: son las tecnologías que corren en el navegador y muestran la parte visual al usuario, como HTML, CSS y JavaScript
+
+A un grupo de tecnologías se les conoce como Stack.
+

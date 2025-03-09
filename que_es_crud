@@ -1,0 +1,16 @@
+Toda aplicación necesita datos que persistan, es decir que no se borren al salir de la aplicación y para lograrlo se necesita un sistema de bases de datos. Cuando comenzamos en la programación trabajamos con datos almacenados en variables (no persistentes), por lo que el siguiente peldaño en nuestro camino como programadores es trabajar con bases de datos y es ahí donde entra el término CRUD.
+
+¿Qué es CRUD?
+CRUD son las siglas de crear, leer, actualizar y borrar (por sus siglas en inglés Create, Read, Update y Delete) y hace referencia a las principales operaciones para interactuar con los registros de una base de datos (CRUD son las 4 operaciones basicas de la persistencia de datos). Recuerda que un registro es cada entrada o fila en una tabla de la base de datos (por ejemplo, si es una de usuarios, cada usuario es un registro). Veamos cada operación de un CRUD.
+
+Create (Crear): Esta acción hace referencia a la creación o inserción de nuevos registros en nuestra tabla de datos. Por ejemplo, un nuevo post en la comunidad de EDteam.
+
+Read (Leer): Su propósito es consultar registros específicos, o en otro contexto, buscar información. Por ejemplo al leer este blog, se hace una consulta a la base de datos para mostrarlo. También podrías usar el buscador de EDteam para encontrar un curso.
+
+Update (Actualizar): Se refiere a cambiar la información de un registro. Por ejemplo, cambiar el título de este blog si nos damos cuenta que tenía errores de ortografía.
+
+Delete (Borrar): Su nombre lo dice todo, su función es borrar un registro. Mi consejo, asegúrate de preguntarle al usuario si realmente está seguro sobre lo que va a eliminar porque no hay vuelta atrás.
+
+Por eso uno de los primeros ejercicios que debe hacer un programador novato es una lista de tareas porque es excelente para aplicar estas cuatro operaciones.
+
+Recuerda que puedes implementar un CRUD con SQL o con un lenguaje de programación.

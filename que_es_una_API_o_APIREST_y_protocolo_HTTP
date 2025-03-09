@@ -1,0 +1,237 @@
+API (APlication programing interface)
+
+Una API (Aplication programing interface) es una interfaz de comuncacion para que programas de software se
+comuniquen entre ellos y compartan datos e informacion, bajo ciertos estandares, y la API mas usada hoy en
+dia es API REST, y el formato mas usado para enviar datos es json.
+
+Una Api tambien es un conjunto de subrutinas, procesos, funciones o metodos que ofrece un software para que otro software
+pueda interactuar con él, pero no necesariamente tiene que ser otros software, el mismo software puede exponer una API para
+que pueda interactuar con si mismo.
+
+Una API tambien es una vía de comunicación entre dos aplicaciones, si tu como programador estas creando una aplicación podrias
+traerte funciones de otra aplicación a través de su API.
+
+Las APIs ayudan a que dos aplicaciones informaticas se comuniquen entre si.
+
+Las APIs pueden ser locales o remotas.
+
+Las locales son las que se ejecutan dentro del mismo entorno, localmente en la misma maquina.
+Las remotas son las que se ejecutan o consumen datos de una aplicacion que esta en otro lugar, en otro punto
+del mundo.
+
+
+CONCEPTOS BASICOS DE UNA API REST (Representational state transfer) (Transferencia de estado representacional)
+
+¿Qué es REST?
+La transferencia de estado representacional (REST) es una arquitectura de software que impone condiciones sobre cómo debe funcionar
+una API. En un principio, REST se creó como una guía para administrar la comunicación en una red compleja como Internet.
+
+Los desarrolladores de API pueden diseñar API por medio de varias arquitecturas diferentes. Las API que siguen el estilo
+arquitectónico de REST se llaman API REST. Los servicios web que implementan una arquitectura de REST son llamados servicios web
+RESTful. El término API RESTful suele referirse a las API web RESTful. Sin embargo, los términos API REST y API RESTful se pueden
+utilizar de forma intercambiable.
+
+la web se basa en REST y este a su vez se basa o utiliza el protocolo HTTP.
+Las API REST son las que nos van a permitir crear aplicaciones web o moviles que se conecten a un servidor via cliente
+servidor.
+la arquitectura REST se basa en el protocolo HTTP para poder exponer su arquitectura.
+
+
+PROTOCOLO HTTP
+HTTP es el protocolo en el que se basa la Web. Fue inventado por Tim Berners-Lee entre los años 1989-1991, HTTP ha visto muchos
+cambios, manteniendo la mayor parte de su simplicidad y desarrollando su flexibilidad. HTTP ha evolucionado, desde un protocolo
+destinado al intercambio de archivos en un entorno de un laboratorio semi-seguro, al actual laberinto de Internet, sirviendo ahora
+para el intercambio de imágenes, vídeos en alta resolución y en 3D.
+
+El protocolo de transferencia de hipertexto (HTTP) constituye los cimientos de la red mundial, y se utiliza para cargar páginas web mediante
+enlaces de hipertexto. HTTP es un protocolo de capa de aplicación diseñado para transferir información entre los dispositivos conectados de la
+red, y se ejecuta sobre otras capas del conjunto de protocolos de la red. Un flujo típico sobre HTTP implica una máquina cliente que realiza
+una solicitud a un servidor, que a continuación envía un mensaje de respuesta.
+
+En TCP el puerto por defecto, para un servidor HTTP en un computador, es el puerto 80. Se pueden usar otros puertos como el 8000 o
+el 8080. La URL de la página pedida contiene tanto el nombre del dominio, como el número de puerto, aunque este puede ser omitido,
+si se trata del puerto 80.
+
+
+ARQUITECTURA DE LOS SISTEMAS BASADOS EN HTTP
+El protocolo HTTP se basa en una comunicacion (o arquitectura) cliente servidor, donde el cliente hace una peticion o solicitud (request) y el
+servidor le da una respuesta (response), esas peticiones son hechas en archivos de texto plano donde se le indica al servidor cual es el
+requerimiento o solicitud.
+
+HTTP es un protocolo basado en el principio de cliente-servidor: las peticiones son enviadas por una entidad: el agente del usuario (User
+Agent) (o un proxy a petición de uno). La mayoría de las veces el agente del usuario (cliente) es un navegador Web, pero podría ser cualquier
+otro programa, como por ejemplo un programa-robot, que explore la Web, para adquirir datos de su estructura y contenido para uso de un
+buscador de Internet.
+
+Cada petición individual se envía a un servidor, el cuál la gestiona y responde. Entre cada petición y respuesta, hay varios intermediarios,
+normalmente denominados proxies, los cuales realizan distintas funciones, como: gateways o caches.
+
+Una petición de HTTP, está formado por los siguientes campos:
+- Un método HTTP, normalmente pueden ser un verbo, como: GET, POST o un nombre como: OPTIONS (en-US) o HEAD (en-US), que defina la
+  operación que el cliente quiera realizar. El objetivo de un cliente, suele ser una petición de recursos, usando GET, o presentar
+  un valor de un formulario HTML, usando POST, aunque en otras ocasiones puede hacer otros tipos de peticiones.
+- La dirección del recurso pedido; la URL del recurso, sin los elementos obvios por el contexto, como pueden ser: sin el protocolo
+  (http://), el dominio (aquí developer.mozilla.org), o el puerto TCP (aquí el 80).
+- La versión del protocolo HTTP.
+- Cabeceras HTTP opcionales, que pueden aportar información adicional a los servidores.
+- O un cuerpo de mensaje, en algún método, como puede ser POST, en el cual envía la información para el servidor.
+
+Ejemplo de peticion (Request) HTTP:
+
+GET /index.html HTTP/1.1
+Host: www.ejemplo.com
+User-Agent: Mozilla/4.5 [en]
+Accept: image/gif, image/jpg, text/html
+Accept-language: en
+Accept-Charset: iso-8859-1
+Accept-Encoding: gzip, deflate, br
+Referer: https://developer.mozilla.org/en-US/docs/Glossary/Simple_header
+
+
+Las respuestas están formadas por los siguentes campos:
+- La versión del protocolo HTTP que están usando.
+- Un código de estado, indicando si la petición ha sido exitosa, o no, y debido a que.
+- Un mensaje de estado, una breve descripción del código de estado.
+- Cabeceras HTTP, como las de las peticiones.
+-  Opcionalmente, el recurso que se ha pedido.
+
+Ejemplo de respuesta (Response) HTTP:
+
+HTTP/1.1 200 OK
+Date: Sat, 09 Oct 2010 14:28:02 GMT
+Server: Apache
+Last-Modified: Tue, 01 Dec 2009 20:18:22 GMT
+ETag: "51142bc1-7449-479b075b2891b"
+Accept-Ranges: bytes
+Content-Length: 29769
+Content-Type: text/html
+
+<!DOCTYPE html... (aquí estarían los 29769 bytes de la página web pedida)
+
+
+CLIENTE: EL AGENTE DEL USUARIO O USER AGENT
+El agente del usuario, es cualquier herramienta que actué en representación del usuario. Esta función es realizada en la mayor parte de los
+casos por un navegador Web. Hay excepciones, como el caso de programas específicamente usados por desarrolladores para desarrollar y depurar
+sus aplicaciones.
+El navegador es siempre el que inicia una comunicación (petición), y el servidor nunca la comienza (hay algunos mecanismos que permiten esto,
+pero no son muy habituales).
+Para poder mostrar una página Web, el navegador envía una petición de documento HTML al servidor. Entonces procesa este documento, y envía más
+peticiones para solicitar scripts, hojas de estilo (CSS), y otros datos que necesite (normalmente vídeos y/o imágenes). El navegador, une
+todos estos documentos y datos, y compone el resultado final: la página Web. Los scripts, los ejecuta también el navegador, y también pueden
+generar más peticiones de datos en el tiempo, y el navegador, gestionará y actualizará la página Web en consecuencia.
+
+Una página Web, es un documento de hipertexto (HTTP), luego habrá partes del texto en la página que puedan ser enlaces (links) que pueden ser
+activados (normalmente al hacer click sobre ellos) para hacer una petición de una nueva página Web, permitiendo así dirigir su agente de
+usuario y navegar por la Web. El navegador, traduce esas direcciones en peticiones de HTTP, e interpretara y procesará las respuestas HTTP,
+para presentar al usuario la página Web que desea.
+
+
+EL SERVIDOR WEB:
+Al otro lado del canal de comunicación, está el servidor, el cual "sirve" los datos que ha pedido el cliente. Un servidor conceptualmente es
+una unica entidad, aunque puede estar formado por varios elementos, que se reparten la carga de peticiones, (load balancing), u otros
+programas, que gestionan otros computadores (como cache, bases de datos, servidores de correo electrónico, ...), y que generan parte o todo el
+documento que ha sido pedido.
+Un servidor no tiene que ser necesariamente un único equipo físico, aunque si que varios servidores pueden estar funcionando en un único
+computador. En el estándar HTTP/1.1 y Host, pueden incluso compartir la misma dirección de IP.
+
+
+PROXIES
+Entre el cliente y el servidor, además existen distintos dispositivos que gestionan los mensajes HTTP. Dada la arquitectura en capas de la Web
+, la mayoria de estos dispositivos solamente gestionan estos mensajes en los niveles de protocolo inferiores: capa de transporte, capa de red
+o capa física, siendo así transparentes para la capa de comunicaciones de aplicación del HTTP, además esto aumenta el rendimiento de la
+comunicación. Aquellos dispositivos, que sí operan procesando la capa de aplicación son conocidos como proxies. Estos pueden ser transparentes
+, o no (modificando las peticiones que pasan por ellos).
+
+
+METODOS O VERBOS ESTANDAR HTTP:
+Estos metodos nos permiten interactuar con la app y son los que van a identificar que tipo de peticion esta haciendo el
+cliente hacia el servidor y son:
+
+get: Es solicitar informacion, del lado del cliente al servidor.
+post: Es enviar nueva informacion desde el cliente hacia el servidor, creamos nuevos recursos como usuarios, comentarios, etc.
+put: Es actualizar información o un recurso que ya exista.
+delete: Para eliminar o borrar un recurso.
+patch: Para actualizar parcialmente un recurso, la diferencia con put es que este actualiza todo el recurso,
+mientras que patch se utiliza cuando queremos actualizar solo una partesita de un recurso.
+header: Permite consultar la existencia de un recurso.
+options: Lo utilizan los navegadores de manera nativa y permite que el navegador valide que si estoy haciendo una petición desde
+un dominio A, hacia un dominio B, el navegador va a decirle primero una peticion tipo options, solo si el dominio es diferente y
+lo hacen unicamente los navegadores, (Lo utilizan los navegadores de manera nativa).
+
+Diferencia entre post, put y patch: post no es idempotente mientras que put y patch si son idempotentes.
+
+
+CODIGOS DE RESPUESTA HTTP ESTANDAR:
+Cuando se solicita una informacion a traves de una API el servidor puede contestar con distintos codigos, con
+esos codigos podemos saber que paso con nuestra petición, estos codigos estan agrupados en cinco clases (de cien en cien), y son:
+100 a 199: Informativos, Casi nunca se utilizan.
+200 a 299: Correcto, todo fue exitoso, un codigo 200 indica una respuesta exitosa tanto del lado del cliente como del servidor.
+300 a 399: Indican redirecciones, cuando se mueve un recurso de un lado a otro.
+400 a 499: Indican error del cliente, indican solicitud invalida a un recurso que no existe, por ejemplo codigo 404, o a un recurso
+al que no se tiene autorizacion, por ejemplo codigo 403.
+500 a 599: Indican errores directamente en el servidor, por ejemplo cuando se cae la base de datos es un error interno del servidor.
+Para mas información consultar el siguiente sitio web:  https://http.cat
+
+
+PROPIEDADES O CARACTERISTICAS DE LA ARQUITECTURA REST:
+Todo en la web es un recurso, es decir todas las peticiones que hace el cliente al servidor son un recurso y deben:
+- Las comunicaciones no tienen estado, es decir cada peticion hacia el servidor es totalmente independiente y nueva de las otras y
+no conoce las otras.
+- Tener un identificador unico (URI), no pueden existir dos recursos con el mismo identificador. Todo recurso debe estar
+identificado de forma univoca o unica en toda la red.
+- Estar representados por un formato (XML, JSON, JPEG, etc)
+- Poderse representar con diferentes formatos.
+
+
+QUE ES UNA URI:
+Cada recurso o informacion que se consulta tiene un identificador unico llamado URI que se consulta a traves
+de un enpoint que es la URL completa. De esta manera puedes encontrar cualquier recurso que estas necesitando
+o una lista de ellos.
+Las URI se pueden representar con un URL (que son los localizadores de los recursos) o con una URN (que son los los nombres de
+esos recursos), hoy en dia son muy poco usadas las URN se utilizan mas las URL.
+
+
+CONTENT TYPES:
+Cada recurso (respuesta o peticion) que recibe tanto el cliente como el servidor debe estar representado con un formato, los mas
+utilizados son:
+-text/plain  Archivo de texto plano.
+-text/html  Archivo .html
+-text/xml  Archivo en .xml
+-application/json  Archivo en formato .json
+-image/jpeg  Archivo de imegen .jpeg
+-image/png   Archivo de imagen .png
+
+
+COOKIES y TOKENS:
+Son una cadena de caracteres que se generan al momento de logearnos en una aplicacion.
+
+
+IDEMPOTENCIA
+Es la caracteristica que hace que aunque se realice una accion muchas veces la respuesta siempre sea la misma, y esta se aplica a
+los metodos HTTP porque algunos metodos son idempotentes (es decir son seguros) no importa cuantas veces se realisen la
+respuesta siempre va a ser la misma y otros son no idempotentes, es decir cada vez que se realisen dara una respuesta diferente.
+
+
+METODOS IDEMPOTENTES O SEGUROS:
+-Get
+-Put
+-Delete
+-Head
+
+
+METODOS NO IDEMPOTENTES O NO SEGUROS:
+-Post
+
+
+HATEOAS (Hypermedia as the Engine of Application State) en español (hipermedia como motor del estado de la aplicación):
+Es una ayuda al cliente para que identique los recursos de una manera mas sencilla, es decir, decirle este recurso se encuentra en
+este PATH o ruta.
+El objetivo de HATEOAS es que las operaciones que se pueden realizar con un API sean auto-descubribles a través de hipervínculos
+que el propio API sirve al cliente. De esta forma, el cliente REST no necesita conocer de antemano la forma de interactuar con el
+servidor, tan sólo debe saber interpretar los hipervínculos.
+
+
+CONCLUSIÓN
+El protocólo HTTP es un protocolo ampliable y fácil de usar. Su estructura cliente-servidor, junto con la capacidad para usar
+cabeceras, permite a este protocolo evolucionar con las nuevas y futuras aplicaciones en Internet.
+

@@ -1,0 +1,2 @@
+Un firewall es un dispositivo de seguridad de red que supervisa el tráfico de red entrante y saliente y decide si se permite o bloquea un tráfico específico en función de un conjunto definido de reglas de seguridad. Puede crear reglas de firewall que especifiquen intervalos de direcciones IP. Solo los clientes a los que se les hayan concedido direcciones IP de dentro de dichos intervalos pueden acceder al servidor de destino. Las reglas de firewall también pueden incluir información específica de puertos y protocolos de red.
+

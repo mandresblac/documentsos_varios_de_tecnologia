@@ -1,0 +1,16 @@
+MODEL-VIEW-CONTROLLER O  MODELO-VISTA-CONTROLADOR
+
+El Modelo Vista Controlador (MVC) es el patron de arquitectura o diseño de aplicaciones mas utilizado actualmente el dia de hoy
+sobre todo en la web y se puede aplicar a cualquier proyecto de diseño o desarrollo de una aplicación en cualquier tipo de lenguaje
+o tecnologia, permite crear proyectos escalables y modulares, sepra una aplicación en 3 componentes logicos:
+
+- Modelo (Model)
+- Vista (View)
+- Controlador (Contoller)
+
+- Vista: Se refiere a la interfaz rafica de una aplicación, muestra siempre la información del modelo.
+- Modelo: Relaciona los datos con los que una aplicacion va a operar, como consultas actualizaciones, eliminación. Tambien se le
+  conoce como al logica de negocio.
+- Controlador: Responde a eventos o acciones que realise el usuario a través de la vista para poder solicitar una operación de
+  información. El controlador une al modelo con la vista, coordina modelo y la vista.
+

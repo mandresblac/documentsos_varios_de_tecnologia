@@ -1,0 +1,43 @@
+¿QUÉ ES EL PROTOCOLO DE DATAGRAMA DE USUARIOS (UDP/IP)?
+El Protocolo de datagrama de usuarios, o UDP, es un protocolo de comunicación que se utiliza en Internet para transmisiones sujetas a
+limitaciones temporales, como la reproducción de vídeo o las búsquedas en DNS. Acelera las comunicaciones al no establecer formalmente una
+conexión antes de transferir los datos. Esto permite que los datos se transfieran muy rápido, pero también puede hacer que los paquetes se
+pierdan en tránsito, y crear oportunidades para vulnerabilidades en forma de ataques DDoS.
+
+
+¿CÓMO FUNCIONA UDP?
+Como todos los protocolos de redes, el UDP es un método estandarizado para transferir datos entre dos ordenadores en una red. Comparado con
+otros protocolos, el UDP realiza este proceso de forma sencilla: envía paquetes (unidades de transmisión de datos) directamente a un ordenador
+de destino, sin establecer primero una conexión, ni indicar el orden de dichos paquetes, ni comprobar si han llegado como estaba previsto.
+(Los paquetes UDP se llaman "datagramas").
+
+El UDP es más rápido pero menos fiable que el TCP, otro protocolo de transporte habitual. En una comunicación TCP, los dos ordenadores
+comienzan estableciendo una conexión mediante un proceso automatizado llamado "protocolo de enlace". Un ordenador no transferirá realmente
+paquetes de datos al otro hasta que no se haya completado el protocolo de enlace.
+
+Las comunicaciones UDP no pasan por este proceso. En su lugar, un ordenador simplemente puede empezar a enviar datos al otro:
+
+Además, las comunicaciones TCP indican el orden en que deben recibirse los paquetes de datos, y confirman que los paquetes están llegando
+según lo previsto. Si un paquete no llega, por la congestión de las redes intermedias, por ejemplo, el TCP exige que se vuelva a enviar. Las
+comunicaciones UDP no incluyen ninguna de estas funciones.
+
+Estas diferencias generan algunas ventajas. Ya que el UDP no necesita un "protocolo de enlace" ni comprobar si los datos llegan correctamente,
+puede transferir datos mucho más rápido que el TCP.
+
+Sin embargo, esta velocidad genera desventajas. Si un datagrama del UDP se pierde en tránsito, no se volverá a enviar. Como resultado, las
+aplicaciones que utilizan UDP deben ser capaces de tolerar errores, pérdidas y duplicaciones.
+
+(Técnicamente, esta pérdida de paquetes no es tanto un defecto del UDP como una consecuencia de cómo se ha diseñado Internet. La mayoría de
+los enrutadores de red, por su propio diseño, no realizan el ordenamiento de los paquetes y la confirmación de su llegada, porque hacerlo
+requeriría una cantidad inviable de memoria adicional. El TCP es una forma de llenar este vacío cuando una aplicación lo requiere).
+
+
+¿QUÉ TIPO DE SERVICIOS DEPENDEN DEL UDP?
+El UDP se suele utilizar en las comunicaciones sujetas a limitación temporal, en las que ocasionalmente es mejor dejar caer los paquetes que
+esperar. El tráfico de voz y vídeo se envía mediante este protocolo, porque ambos están sujetos a limitación temporal y están diseñados para
+soportar cierto nivel de pérdida. Por ejemplo, la VOIP (voz sobre IP), que utilizan muchos servicios telefónicos basados en Internet, funciona
+sobre UDP. Esto es así porque es preferible una conversación telefónica estática a una muy clara pero con mucho retraso.
+
+Esto también hace que el UDP sea el protocolo ideal para los videojuegos en línea. De forma similar, como los servidores DNS deben ser rápidos
+y eficientes, funcionan también mediante UDP.
+

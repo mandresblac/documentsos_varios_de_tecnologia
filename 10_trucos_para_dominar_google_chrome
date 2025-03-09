@@ -1,0 +1,66 @@
+Google es la herramienta más usada en PROGRAMACIÓN.
+¡Pero muy poca gente conoce todos sus secretos!
+
+NECESITAS saber buscar para ahorrar tiempo.
+
+¡Te muestro 10 TRUCOS definitivos para que lo DOMINES!
+
+1- FRASES EXACTAS
+Puedes usar las comillas dobles para indicar que buscas una frase exacta.
+SUPER ÚTIL para errores,  encontrar solución a errores.
+De esta forma podrás saber si es un error que otra persona ha tenido y cómo solucionarlo rápidamente.
+Por ejemplo:
+arreglar"__diname is not defined in ES module scope"
+
+2- FILTRA POR SITIO
+¿Quieres usar la potencia de Google para buscar en cualquier página web?
+Puedes usar el filtro "site" para indicar en qué página en concreto quieres buscar.
+Por ejemplo, úsalo para buscar sólo en Stack Overflow de esta forma:
+site:stackoverflow.com javascript sort alphabetically
+
+3- ENCUENTRA DEFINICIONES
+¿Te está costando algún concepto en programación?
+Google normalmente te ayuda a encontrar la definición que buscas... ¡pero puedes forzarlo!
+Usa el filtro "define" para indicar que quieres la definición de la búsqueda, ejemplo:
+define:hoisting in javascript
+
+4- EXCLUIR RESULTADOS
+Puedes usar el operador "-" para excluir términos de una búsqueda.
+Por ejemplo, yo lo uso mucho para buscar alternativas de dependencias que no me interesan.
+Así elimino ruido fácilmente y me enfoco en lo demás, ejemplo:
+library node read args -yargs
+
+5- INFORMACIÓN NUEVA
+Es muy común toparte con tutoriales o artículos antiguos...
+¡Pues tiene solución! Puedes usar las palabras before: y after: para evitar encontrar resultados desactualizados.
+Por ejemplo:
+global state management react after:2022-01-01
+
+6- EL ASTERÍSCO
+A veces usamos Google pero ni siquiera sabemos qué estamos buscando.
+Especialmente útil cuando no recuerdas una palabra o al menos sabes algo de contexto de lo que quieres.
+Por ejemplo, así puedo buscar sobre el DOM sin saber qué significa la D:
+document object * in javascript
+
+7- RELACIONADO
+¿Hay un blog, página o producto que te gusta y estás buscando similares o relacionadas?
+Puedes usar la palabra clave "related" para buscar las páginas que tengan que ver con otro dominio, por ejemplo:
+related:github.com
+
+8- BUSCA X ó Y
+A veces quiere encontrar resultados relacionados con dos términos.
+Con el operador OR puedes lograrlo.
+Útil para encontrar la solución a algo que se puede expresar de diferentes formas, por ejemplo:
+http 404 error OR not found page Vercel
+
+9- BUSCA EBOOKS de PROGRAMACIÓN
+¿Estás buscando algún libro para aprender o mejorar en programación?
+Puedes usar los filtros ext o filetype para buscar directamente el PDF del libro, (también funciona con archicos Word y Power Poin),
+ejemplo:
+"eloquent javascript" ext:pdf
+
+10- USA LA BÚSQUEDA AVANZADA
+Si estás buscando algo muy específico o no te quieres liar con tanto operador... ¡usa esto!
+Con la búsqueda avanzada además puedes filtrar por otros campos como región o licencias.
+URL de busqueda avanzada en google chrome:  https://www.google.com/advanced_search
+

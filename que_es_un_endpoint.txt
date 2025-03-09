@@ -1,0 +1,16 @@
+Un endpoint es una URL específica (o dirección) dentro de un servicio o API (Interfaz de Programación de Aplicaciones) que permite acceder a una funcionalidad o recurso específico. Es el punto final donde el cliente (como una aplicación web o móvil) interactúa con el servidor para enviar o recibir datos.
+
+Un  ENDPOINT es un Path o ruta donde tenemos un recurso, las APIs tienen diferentes URLs a las que podemos llamar para extraer información, se le llaman ENDPOINT porque es el final de la API a la que vamos a poder acceder para recuperar una información especifica que necesitemos; ejemplo de ENDPOINT en Nodejs:
+
+app.get("/movies", (req, res) => {
+  res.json(movies);
+});
+
+
+CONCEPTOS CLAVE EN EL CONTEXTO DE LAS APIS:
+- Cliente: La aplicación que hace la solicitud, como una página web o una app móvil.
+- Servidor: El sistema que maneja las solicitudes y proporciona las respuestas. En el servidor se define la API.
+- Endpoint: Es la dirección o ruta específica donde se puede acceder a un recurso o ejecutar una acción particular dentro de la API.
+
+Cada endpoint normalmente está asociado a una operación o acción específica, y puede utilizar diferentes métodos HTTP, como GET, POST, PUT, DELETE, entre otros, para definir qué tipo de operación se realiza en ese recurso.
+

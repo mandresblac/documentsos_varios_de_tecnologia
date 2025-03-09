@@ -1,0 +1,36 @@
+ATAJOS DE TECLADO EN GOOGLE CHROME
+
+ATAJOS DE TECLADO PARA PESTAÑAS Y VENTANAS
+Abrir nueva ventana: Ctrl+N
+Abrir pestaña nueva e ir a ella: Ctrl+T
+Cerrar la pestaña actual: Ctrl+w o Ctrl+F4
+Ir directamente al modo incognito: Ctrl+Shift+N
+Abrir la ultima pestaña cerrada: Ctrl+Shift+T
+Ir a una pestaña especifica: Ctrl+ 1 a 8
+Ir a la ultima pestaña: Ctrl+9
+Abrir pagina de inicio en pestaña activa: Alt+inicio
+Para saltar entre las pestañas: Ctrl+Re Pág o Ctrl+ Av Pág
+Situar cursor sobre barra de navegación: Ctrl+L
+Borrar directamente los datos de navegación: Ctrl+Shift+suprimir
+
+ATAJOS PARA LAS FUNCIONES DE CHROME
+Abrir Menu: Alt+F, Alt+e o F10
+Mostrar u ocultar barra de marcadores: Ctrl+Shift+B
+Abrir administrador de marcadores: Ctrl+Shift+O
+Abrir la pagina de descargas: Ctrl+J
+Abrir pagina de historial: Ctrl+H
+Abrir la barra de busquedas: Ctrl+F o F3
+Abrir herramientas para desarrolladores: Ctrl+Shift+J o F12
+
+ACCIONES EN LAS PAGINAS WEB
+Volver a cargar pagina actual: F5 o Ctrl+R
+Avanzar entre los elementos clicables de la página: Tabulador
+Retroceder entre los elementos clicables de la pagina: Shift+Tabulador
+Abrir codigo fuente en una nueva pestaña: Ctrl+U
+Guardar en Marcadores: Ctrl+D
+Ampliar o reducir con el zoom: Ctrl y +, Ctrl y -
+Cancelar zoom restableciendo modo predeterminado: Ctrl+0
+Desplazarse hacia abajo en la página: Espacio o AvPág
+Desplazarse hacia arriba en la página: Shift+Espacio o Repág
+Ir al principio o al final de la pagina: Inicio, Fin
+Abrir pagina de inicio en pestaña actual:Alt+Inicio

@@ -1,0 +1,13 @@
+¿Cómo se sabe que una aplicación o microservicio necesita escalamiento vertical u horizontal?
+
+El escalamiento vertical es simplemente agrandar el tamaño de las instancias.
+El escalamiento horizontal se da cuando en vez de agrandar los servidores, se crean más servidores.
+Un tipo de escalamiento no es mejor que otro, se debe implementar uno u otro dependiendo de las necesidades.
+
+¿Existe algún caso de uso donde se prefiera un escalamiento vertical a horizontal al momento de atender problemas de alta concurrencia?
+En el caso de que tengamos muchas peticiones cortas, no necesitamos un escalamiento vertical, sino uno horizontal. Esto nos permitirá recibir más peticiones y escalar independientemente; las diferentes partes de nuestra aplicación pueden crecer sin necesidad de estar involucradas en otras.
+
+Continuando con el ejemplo de la clase anterior, podríamos escalar verticalmente los recursos encargados del procesamiento de videos y escalar horizontalmente los recursos encargados de la autenticación de usuarios (se pueden implementar los dos tipos de escalamientos en una misma infraestructura a diferentes recursos). De esta forma seremos más eficientes a la hora de usar recursos. Y esto no solamente nos permitirá ahorrar dinero, sino que podemos elegir recursos que sean mejores en unas cosas que en otras; por ejemplo, en algunos proveedores de nube hay algunas instancias de servidores que especiales para GPU (tienen un procesador de gráficas mucho mejor que el de los servidores comunes), otras especiales en CPU (tienen más procesamiento) u otras con más memoria RAM (pueden ser usadas por ejemplo para caché).
+
+Debemos siempre tener en cuenta que tenemos diferentes tipos de recursos y diferentes formas de escalar que pueden ser aplicadas de diferentes maneras dependiendo del uso de nuestra aplicación.
+

@@ -1,0 +1,2 @@
+es una característica de HTTP que permite que una aplicación web que se ejecuta en un dominio acceda a recursos de otro dominio. Por motivos de seguridad, los exploradores web modernos restringen el scripting entre sitios de forma predeterminada.
+

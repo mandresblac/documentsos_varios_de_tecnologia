@@ -1,0 +1,22 @@
+
+Un algoritmo es un conjunto de instrucciones o pasos finitos bien definidos y ordenados para resolver un problema. Los algoritmos
+son implementados en programas que luego son ejecutados por las computadoras.
+
+Independientemente de la clasificación y el tipo de algoritmo, básicamente todos están compuestos de tres partes principales:
+Entrada: Se trata del conjunto de datos que el algoritmo necesita como insumo para procesar.
+Proceso: Son los pasos necesarios aplicados por el algoritmo a la entrada recibida para poder llegar a una salida o resolución del
+problema.
+Salida: Es el resultado producido por el algoritmo a partir del procesamiento de la entrada una vez terminada la ejecución del
+proceso.
+
+Además del tipo de algoritmo existen una serie de características comunes a todos, a continuación, se mencionan alguna de ellas.
+Exactitud: el algoritmo tiene que indicar un orden claro de la ejecución de cada paso, estos no pueden ser ambiguos (debe existir
+una confiabilidad).
+Estar definido: si se realiza la ejecución de un mismo algoritmo en distintas instancias utilizando la misma entrada, debe resultar
+en la misma salida.
+Completo: en la solución se deben considerar todas las posibilidades del problema.
+Finito: necesariamente un algoritmo debe tener un número finito de pasos.
+Instrucciones entendibles: Las instrucciones que lo describen deben ser claras y legibles.
+General: debe poder abarcar problemas de un mismo tema soportando las distintas variantes que se presentan en la definición del
+problema.
+
