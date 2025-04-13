@@ -1,0 +1,30 @@
+SWAP (en inglés, "Swap Space" o "Swap Memory") o AREA DE INTERCAMBIO, es un espacio en el disco duro que un sistema operativo utiliza como extensión de la memoria RAM cuando esta se llena. Es una técnica de gestión de memoria que permite al sistema seguir funcionando incluso cuando la memoria física (RAM) está agotada.
+
+🔹 ¿Cómo funciona?
+1. Cuando la RAM se satura, el sistema mueve datos poco utilizados de la RAM al espacio SWAP (en el disco duro o SSD).
+2. Si esos datos son necesarios nuevamente, el sistema los intercambia (de ahí el nombre swap) de vuelta a la RAM.
+3. Esto evita que el sistema se quede sin memoria y se bloquee, pero puede ralentizar el rendimiento, ya que el disco es más lento que la RAM.
+
+🔹 ¿Dónde se usa?
+- Linux/Unix: Usan comúnmente una partición SWAP dedicada o un archivo SWAP.
+- Windows: Equivalente al "archivo de paginación" (pagefile.sys).
+- macOS: También utiliza un archivo de intercambio.
+
+🔹 Ventajas
+✔ Permite ejecutar más aplicaciones de las que la RAM soportaría.
+✔ Evita fallos del sistema por falta de memoria.
+✔ Útil en sistemas con poca RAM.
+
+🔹 Desventajas
+❌ Más lento que la RAM (especialmente en HDD, menos en SSD).
+❌ Uso excesivo puede degradar el rendimiento (thrashing).
+
+🔹 ¿Es necesario hoy en día?
+Depende:
+
+- En sistemas con mucha RAM (ej: 16GB+), puede no ser crítico.
+- En servidores o máquinas con cargas pesadas, sigue siendo útil.
+- En SSD, el intercambio es más rápido, pero puede desgastar el disco con el tiempo.
+
+En resumen, el SWAP es una extensión de la memoria RAM que utiliza espacio en el disco duro para ayudar a gestionar la memoria cuando la RAM física está llena. Es una herramienta importante para la estabilidad del sistema, aunque un uso excesivo puede afectar el rendimiento.
+
